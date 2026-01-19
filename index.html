@@ -1,0 +1,71 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PteroStyle Panel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-white min-h-screen flex">  <!-- Sidebar -->  <aside class="w-64 bg-slate-950 border-r border-slate-800 p-4">
+    <h1 class="text-xl font-bold text-blue-500">PteroStyle</h1>
+    <p class="text-sm text-slate-400 mb-6">Game Panel</p><nav class="space-y-2">
+  <a class="block px-3 py-2 rounded-lg bg-blue-600">Dashboard</a>
+  <a class="block px-3 py-2 rounded-lg hover:bg-slate-800">Servers</a>
+  <a class="block px-3 py-2 rounded-lg hover:bg-slate-800">Users</a>
+  <a class="block px-3 py-2 rounded-lg hover:bg-slate-800">Billing</a>
+  <a class="block px-3 py-2 rounded-lg hover:bg-slate-800">Settings</a>
+</nav>
+
+  </aside>  <!-- Main Content -->  <main class="flex-1 p-6"><!-- Header -->
+<div class="flex justify-between items-center mb-6">
+  <h2 class="text-2xl font-semibold">Dashboard</h2>
+  <button class="bg-blue-600 px-4 py-2 rounded-xl hover:bg-blue-700">Create Server</button>
+</div>
+
+<!-- Stats -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+  <div class="bg-slate-800 p-4 rounded-2xl shadow">
+    <p class="text-slate-400">Total Servers</p>
+    <h3 class="text-2xl font-bold">12</h3>
+  </div>
+  <div class="bg-slate-800 p-4 rounded-2xl shadow">
+    <p class="text-slate-400">Active Users</p>
+    <h3 class="text-2xl font-bold">38</h3>
+  </div>
+  <div class="bg-slate-800 p-4 rounded-2xl shadow">
+    <p class="text-slate-400">Node Online</p>
+    <h3 class="text-2xl font-bold text-green-400">3</h3>
+  </div>
+</div>
+
+<!-- Server List -->
+<div class="bg-slate-800 p-4 rounded-2xl shadow">
+  <h3 class="text-lg font-semibold mb-4">Your Servers</h3>
+  <table class="w-full text-sm">
+    <thead>
+      <tr class="text-slate-400">
+        <th class="text-left py-2">Name</th>
+        <th class="text-left py-2">Status</th>
+        <th class="text-left py-2">Memory</th>
+        <th class="text-left py-2">CPU</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="border-t border-slate-700">
+        <td class="py-2">Minecraft Survival</td>
+        <td class="text-green-400">Online</td>
+        <td>2 GB</td>
+        <td>40%</td>
+      </tr>
+      <tr class="border-t border-slate-700">
+        <td class="py-2">NodeJS Bot</td>
+        <td class="text-red-400">Offline</td>
+        <td>512 MB</td>
+        <td>0%</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+  </main>
+</body>
+</html>
